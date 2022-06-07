@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task_1/Pages/HomeScreen.dart';
 import 'package:task_1/Pages/LoginPage.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,7 +21,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
       darkTheme: ThemeData(brightness: Brightness.dark),
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+          primarySwatch: Colors.indigo,
+          fontFamily: GoogleFonts.lato().fontFamily),
       /*home: const HomeScreen(title: 'Home Screen'),*/
       routes: {
         "/": (context) => LoginPage(title: "Login Page"),
